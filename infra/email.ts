@@ -1,4 +1,3 @@
-export const email = sst.aws.Email.get(
-  "invoicen-email",
-  "no-reply@keizerworks.com",
-);
+export const email = new sst.aws.Email("core", {
+  sender: "no-reply@keizerworks.com",
+});

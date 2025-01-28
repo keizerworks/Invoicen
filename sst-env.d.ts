@@ -5,14 +5,14 @@
 
 declare module "sst" {
   export interface Resource {
-    "invoicen-auth": {
-      "type": "sst.aws.Auth"
-      "url": string
-    }
-    "invoicen-email": {
+    "core": {
       "configSet": string
       "sender": string
       "type": "sst.aws.Email"
+    }
+    "invoicen-auth": {
+      "type": "sst.aws.Auth"
+      "url": string
     }
     "invoicen-pg": {
       "database": string
